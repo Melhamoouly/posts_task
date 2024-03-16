@@ -13,7 +13,7 @@ void main() async {
   await RealmConfig.instance.initialize();
   await initializeGetIt();
 
-  Bloc.observer =  MyBlocObserver();
+  Bloc.observer =   MyBlocObserver();
 
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
