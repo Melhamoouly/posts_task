@@ -98,7 +98,7 @@ jobs:
           subject: Opportunity for you
           to: mohamedelhamooly@gmail.com
           from: GitHub Campus Expert
-          html_body: file://temp.html
+#          html_body: file://temp.html
           secure: true
           ignore_cert: true
           convert_markdown: true
