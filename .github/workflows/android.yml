@@ -88,21 +88,21 @@ jobs:
           token: ${{ secrets.GITHUBRELEASETOKEN }}
           tag: apk_Release_${{ steps.read-version.outputs.version-number }}
           allowUpdates: true
-      - name: Send mail
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: Melhamoouly@gmail.com
-          password: ${{SECRETS.GMAILPASS}}
-          subject: Opportunity for you
-          to: mohamedelhamooly@gmail.com
-          from: GitHub Campus Expert
-#          html_body: file://temp.html
-          secure: true
-          ignore_cert: true
-          convert_markdown: true
-          priority: low
+#      - name: Send mail
+#        uses: dawidd6/action-send-mail@v3
+#        with:
+#          server_address: smtp.gmail.com
+#          server_port: 465
+#          username: Melhamoouly@gmail.com
+#          password: ${{SECRETS.GMAILPASS}}
+#          subject: Opportunity for you
+#          to: mohamedelhamooly@gmail.com
+#          from: GitHub Campus Expert
+##          html_body: file://temp.html
+#          secure: true
+#          ignore_cert: true
+#          convert_markdown: true
+#          priority: low
 #      - name: Send E-Mail (SMTP)
 #        uses: hilarion5/send-mail@v1
 #        with:
